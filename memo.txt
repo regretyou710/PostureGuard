@@ -1,0 +1,18 @@
+npx create-expo-app demo03 --template blank
+(npx create-expo-app@3.4.2 --template blank)
+(npx create-expo-app@latest --template blank)
+
+// 讓空白專案可以透過web訪問
+npx expo install react-native-web react-dom @expo/metro-runtime
+
+// 讓expo go執行不會出現版本落差
+npm install expo@~54.0.0
+npx expo install --fix
+npx expo start -c
+
+// 安裝依賴包
+npx expo install expo-sensors expo-haptics lottie-react-native
+npm install zustand
+npm install @lottiefiles/dotlottie-react
+npx expo install expo-keep-awake
+
